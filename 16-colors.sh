@@ -5,4 +5,4 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-echo -e "$R Hello World $N, $Y I am learning Linux $N" # -e used to enable backslash escape sequences.
+echo -e "$R Hello World $N, $Y I am learning shell $N" # -e used to enable backslash escape sequences.
