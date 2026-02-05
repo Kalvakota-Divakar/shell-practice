@@ -21,4 +21,4 @@ while IFS= read -r filepath; do
   echo "Deleting file: $filepath"
   rm -f $filepath
   echo "Deleted file: $filepath"
-done <<< $FILES_TO_DELETE
+done <<< $FILES_TO_DELETE # using here string to read the output of find command line by line.
