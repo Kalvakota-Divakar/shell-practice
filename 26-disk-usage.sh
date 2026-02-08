@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 MESSAGE=""
 IP_ADDRESS=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
-
+# function to log messages with timestamp
 log(){
     echo -e "$(date "+%Y-%m-%d %H:%M:%S") | $1"
 }
@@ -25,5 +25,5 @@ do
 done <<< $DISK_USAGE
 
 echo -e "$MESSAGE"
-
-sh mail.sh "info@joindevops.com" "High Disk Usage Alert on $IP_ADDRESS" "$MESSAGE" "HIGH_DISK_USAGE" "$IP_ADDRESS" "DevOps Team"
+# if there is a msg to send, call the mail script to  send the email alert.
+sh mail.sh "kalvakotadivakar@gmail.com" "High Disk Usage Alert on $IP_ADDRESS" "$MESSAGE" "HIGH_DISK_USAGE" "$IP_ADDRESS" "DevOps Team"
