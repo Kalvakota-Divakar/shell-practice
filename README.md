@@ -1,6 +1,6 @@
 # Shell Scripting Practice
 
-A collection of shell scripts I wrote while learning Bash — from printing hello world to automating backups.
+A collection of shell scripts I wrote while learning Bash from printing hello world to automating backups.
 
 ---
 
@@ -59,7 +59,7 @@ sudo bash 25-backup.sh
 
 **Kalvakota Divakar**
 - GitHub: https://github.com/Kalvakota-Divakar
-- LinkedIn: https://linkedin.com/in/your-handle
+- LinkedIn: https://www.linkedin.com/in/kalvakota-divakar/
 
 ---
 
